@@ -1,0 +1,45 @@
+/* Main Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+.jumbotron {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+/* Note Styles */
+.note-card {
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.note-card .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+/* Flash Messages */
+#msg-flash {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+}
