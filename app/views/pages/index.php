@@ -4,10 +4,10 @@
             <h1 class="display-3"><?php echo $data['title']; ?></h1>
             <p class="lead"><?php echo $data['description']; ?></p>
             <?php if(!isset($_SESSION['user_id'])) : ?>
-                <a href="<?php echo URLROOT; ?>/users/register" class="btn btn-primary btn-lg">Register</a>
-                <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-success btn-lg">Login</a>
+                <a href="<?php echo URLROOT; ?>/auth/register" class="btn btn-primary btn-lg">Đăng ký</a>
+                <a href="<?php echo URLROOT; ?>/auth/login" class="btn btn-success btn-lg">Đăng nhập</a>
             <?php else : ?>
-                <a href="<?php echo URLROOT; ?>/notes" class="btn btn-primary btn-lg">My Notes</a>
+                <a href="<?php echo URLROOT; ?>/notes" class="btn btn-primary btn-lg">Ghi chú của tôi</a>
             <?php endif; ?>
         </div>
     </div>

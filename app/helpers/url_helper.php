@@ -1,7 +1,7 @@
 <?php
 // Redirect page
 function redirect($page) {
-    header('location: ' . APP_URL . '/' . $page);
+    header('location: ' . URLROOT . '/' . $page);
 }
 
 // Get current URL

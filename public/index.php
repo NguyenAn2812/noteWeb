@@ -1,18 +1,23 @@
 <?php
+// Define root path
+define('ROOT_PATH', dirname(__DIR__));
+
 // Load Config
-require_once '../app/config/config.php';
+require_once ROOT_PATH . '/app/config/config.php';
 
 // Load Helpers
-require_once '../app/helpers/session_helper.php';
-require_once '../app/helpers/url_helper.php';
+require_once ROOT_PATH . '/app/helpers/session_helper.php';
+require_once ROOT_PATH . '/app/helpers/url_helper.php';
 
-// Autoload Core Libraries
-spl_autoload_register(function($className) {
-    require_once '../app/libraries/' . $className . '.php';
-});
+// Load Core Libraries
+require_once ROOT_PATH . '/app/libraries/Controller.php';
+require_once ROOT_PATH . '/app/libraries/Core.php';
+require_once ROOT_PATH . '/app/libraries/Database.php';
 
-// Start Session
-session_start();
+// Start Session if not already started
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 // Initialize Core
 $init = new Core(); 

@@ -1,9 +1,21 @@
 <?php
-// Database Configuration
+// DB Params
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'note_taking_app');
+define('DB_NAME', 'note_web');
+
+// App Root
+define('APPROOT', dirname(dirname(__FILE__)));
+
+// URL Root
+define('URLROOT', 'http://localhost/noteWeb');
+
+// Site Name
+define('SITENAME', 'Note Web');
+
+// App Version
+define('APPVERSION', '1.0.0');
 
 // Application Configuration
 define('APP_NAME', 'Note Taking App');
